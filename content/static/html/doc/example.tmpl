@@ -16,6 +16,7 @@
       <p>Code:</p>{{"\n" -}}
       {{render_code .Example}}{{"\n" -}}
       {{- if (or .Output .EmptyOutput) -}}
+        <p>Output:</p>{{"\n" -}}
         <pre class="Documentation-exampleOutput">{{"\n"}}{{.Output}}</pre>{{"\n" -}}
       {{- end -}}
     </div>{{"\n" -}}

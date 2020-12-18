@@ -46,3 +46,11 @@ func Example_stringsCompare() {
 	// 0
 	// 1
 }
+
+// executable example with no Output comment
+func Example_stringsCompareNoOutput() {
+	// example comment
+	fmt.Println(strings.Compare("a", "b"))
+	fmt.Println(strings.Compare("a", "a"))
+	fmt.Println(strings.Compare("b", "a"))
+}

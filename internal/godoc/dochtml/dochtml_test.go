@@ -202,6 +202,7 @@ app.Name = &#34;greet&#34;
 _ = app.Run([]string{&#34;greet&#34;})
 </pre>
 
+<p>Output:</p>
 <pre class="Documentation-exampleOutput">NAME:
    greet - A new cli application
 
@@ -243,10 +244,42 @@ func main() {
 }
 </pre>
 
+<p>Output:</p>
 <pre class="Documentation-exampleOutput">-1
 0
 1
 </pre>
+</div>
+<div class="Documentation-exampleButtonsContainer">
+        <p class="Documentation-exampleError" role="alert" aria-atomic="true"></p>
+        <button class="Documentation-examplePlayButton" aria-label="Play Code">Play</button>
+      </div></details>`,
+		},
+		{
+			name:   "Executable example with no Output Comment",
+			htmlID: "example-package-StringsCompareNoOutput",
+			want: `<details tabindex="-1" id="example-package-StringsCompareNoOutput" class="Documentation-exampleDetails js-exampleContainer">
+<summary class="Documentation-exampleDetailsHeader">Example (StringsCompareNoOutput) <a href="#example-package-StringsCompareNoOutput">¶</a></summary>
+<div class="Documentation-exampleDetailsBody">
+<p>executable example with no Output comment
+</p>
+<p>Code:</p>
+
+<pre class="Documentation-exampleCode">package main
+
+import (
+	&#34;fmt&#34;
+	&#34;strings&#34;
+)
+
+func main() {
+	<span class="comment">// example comment</span>
+	fmt.Println(strings.Compare(&#34;a&#34;, &#34;b&#34;))
+	fmt.Println(strings.Compare(&#34;a&#34;, &#34;a&#34;))
+	fmt.Println(strings.Compare(&#34;b&#34;, &#34;a&#34;))
+}
+</pre>
+
 </div>
 <div class="Documentation-exampleButtonsContainer">
         <p class="Documentation-exampleError" role="alert" aria-atomic="true"></p>
